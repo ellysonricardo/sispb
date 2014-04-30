@@ -1,0 +1,26 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+	 http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" version="2.0">
+
+<persistence-unit name="sites">
+<provider>org.hibernate.ejb.HibernatePersistence</provider>
+<class>br.com.pousadadobicao.modelo.Site</class>
+<class>br.com.pousadadobicao.modelo.Usuario</class>
+<class>br.com.pousadadobicao.modelo.Cliente</class>
+<class>br.com.pousadadobicao.modelo.Endereco</class>
+<class>br.com.pousadadobicao.modelo.Evento</class>
+<class>br.com.pousadadobicao.modelo.ValorDiaria</class>
+<class>br.com.pousadadobicao.modelo.Funcionario</class>
+<class>br.com.pousadadobicao.modelo.Agenciador</class>
+<class>br.com.pousadadobicao.modelo.Produto</class>
+<class>br.com.pousadadobicao.modelo.Reserva</class>
+<properties>
+<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+<property name="hibernate.show_sql" value="true"/>
+<property name="hibernate.format_sql" value="true"/>
+<property name="hibernate.hbm2ddl.auto" value="update"/>
+</properties>
+</persistence-unit>
+</persistence>
+
